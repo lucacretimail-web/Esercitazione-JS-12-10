@@ -14,7 +14,7 @@ REGOLE
 /* SCRIVI QUI LA TUA RISPOSTA */
 const NOME = 'Mario';
 const COGNOME = 'Rossi';
-console. log(' Ciao, mi chiamo ${NOME} ${COGNOME}");
+console.log(`Ciao, mi chiamo ${NOME} ${COGNOME}`);
 
 
 /* ESERCIZIO 2 — Calcolatrice base
@@ -64,13 +64,9 @@ console.log(`5 anni fa avevi ${eta5AnniFa} anni.`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-//definizione variabile età
-const eta = 31
-
-//calcolo booleano
+let eta;
+eta = 18;
 const maggioreEta = eta >= 18;
-
-//stampa risultato
 console.log(`Età: ${eta} — Maggiorenne: ${maggiorenne}`);
 
 /* ESERCIZIO 5 — Tipo del valore
@@ -80,22 +76,17 @@ console.log(`Età: ${eta} — Maggiorenne: ${maggiorenne}`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const testo = "Javascript syntax makes no sense";
-const numero = 42;
-const boolean = true;
+let myString = 'Pippo';
+let myNumber = 12;
+let myBoolean = true;
+let myUndefined;
+let myNull = null;
 
-/* Sembra un caso di archeologia informatica, a quanto pare ritorna "object", un errore storico dalla prima
-versione del linguaggio. non è stato mai aggiornato per non rompere la compatibilità.
-*/
-const nulla = null;
-let valoreNonDefinito;
-
-// Stampa di ogni variabile con typeof
-console.log(`testo è di tipo: ${typeof testo}`);
-console.log(`numero è di tipo: ${typeof numero}`);
-console.log(`booleano è di tipo: ${typeof booleano}`);
-console.log(`valoreNullo è di tipo: ${typeof valoreNullo}`);
-console.log(`valoreNonDefinito è di tipo: ${typeof valoreNonDefinito}`);
+console.log(`La variabile ${myString} è di tipo ${typeof myString}`);
+console.log(`La variabile ${myNumber} è di tipo ${typeof myNumber}`);
+console.log(`La variabile ${myBoolean} è di tipo ${typeof myBoolean}`);
+console.log(`La variabile ${myUndefined} è di tipo ${typeof myUndefined}`);
+console.log(`La variabile ${myNull} è di tipo ${typeof myNull}`);
 
 /* ESERCIZIO 6 — === vs ==
    numero = 5
@@ -105,10 +96,10 @@ console.log(`valoreNonDefinito è di tipo: ${typeof valoreNonDefinito}`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const numero = 5
-const stringa = "5" 
+let numero = 5
+const stringa = "5"
 
-console.log(`numero == stringa: ${numero == stringa}`); // il doppio uguale controlla il valore 
+console.log(`numero == stringa: ${numero == stringa}`); // il doppio uguale controlla il valore
 console.log(`numero === stringa: ${numero === stringa}`); // il triplo controlla valore e tipo
 
 /* ESERCIZIO 7 — Conversioni implicite
@@ -131,6 +122,13 @@ console.log(`numero === stringa: ${numero === stringa}`); // il triplo controlla
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let n;
+n = 28;
+console.log(`n è pari: ${n % 2 === 0}`);
+console.log(`n è divisibile per 3: ${n % 3 === 0}`);
+console.log(`n è pari e divisibile per 3: ${n % 2 === 0 && n % 3 === 0}`);
+
 
 /* --EXTRA-- ESERCIZIO 9 — Triangolo
    Tre const "a", "b", "c" (lunghezze dei lati).
